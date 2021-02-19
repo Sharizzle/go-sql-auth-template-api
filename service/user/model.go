@@ -11,7 +11,7 @@ type User struct {
 	ID   int `gorm:"primary_key" json:"id"`
 	Email string `gorm:"unique_index" json:"email"`
 	Name string `json:"name"`
-	Hash string `json:"-"` //hides from any json marshalling output
+	Hash string `json:"-"` 
 }
 
 type JWTToken struct {

@@ -2,6 +2,10 @@
 
 Easy to follow boilerplate for a **Golang** webserver with authentication.
 
+## Initialization
+
+Run the `initialize_users.sql` SQL Command to initialize the database table.
+
 ## Packages Used
 
 - Mux (Routing)
@@ -10,25 +14,23 @@ Easy to follow boilerplate for a **Golang** webserver with authentication.
 - JWT GO (Authentication)
 - SQL Lite Drivers
 
-For a postgres version, see the [Postgres]() Branch
-
-## What's included
+## Routes
 
 Basic CRUD Routes for User Data
 
 - Show Users `GET /users`
-- Show User `GET /users/{userId}`
 - Create User `POST /users`
-- User Login `POST /users/login`
+- Show User `GET /users/{userId}`
 - Delete User `DELETE /users/{userId}`
 - Update User `PUT /users/{userId}`
+- User Login `POST /users/login`
 
 ## Configuration
 
-Create a `.env` file with the following parameters
+Create a `.env` file with the following parameters. For SQL Lite only port and JWT secret are required.
 
+PORT = ...  
 ENVIRONMENT = ... \
-PORT = ... \
 DB_HOST = ...\
 DB_NAME = ...\
 DB_USERNAME = ...\
