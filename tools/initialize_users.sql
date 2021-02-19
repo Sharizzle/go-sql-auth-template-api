@@ -1,0 +1,6 @@
+CREATE TABLE users (
+	user_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    hash BINARY(64) NOT NULL
+    );
