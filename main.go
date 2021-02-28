@@ -58,6 +58,8 @@ func main(){
 
 	//Setup database
 	db.DB = db.SetupDB()
+	db.DB.AutoMigrate(&user.User{})
+
 
 	//create http server
 	log.Fatal(http.ListenAndServe(":"+port, router))

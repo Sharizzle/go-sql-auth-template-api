@@ -2,10 +2,6 @@
 
 Easy to follow boilerplate for a **Golang** webserver with authentication.
 
-## Initialization
-
-Run the `initialize_users.sql` SQL Command to initialize the database table.
-
 ## Packages Used
 
 - Mux (Routing)

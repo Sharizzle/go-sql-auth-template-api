@@ -5,10 +5,11 @@ import (
 	"os"
 	"github.com/dgrijalva/jwt-go"
 	"time" 
+	"gorm.io/gorm"
 )
 
 type User struct {
-	ID   int `gorm:"primary_key" json:"id"`
+	gorm.Model
 	Email string `gorm:"unique_index" json:"email"`
 	Name string `json:"name"`
 	Hash string `json:"-"` 
